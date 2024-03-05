@@ -1,9 +1,13 @@
 import "./navbar.css";
 
-export default function NavBar() {
-    return(
+export default function NavBar({ setSearch }) {
+    return (
         <main className="navbar">
-            Navigation bar
+            <h1>Shoper</h1>
+            <section className="right">
+                <h2><a href="/cart">cart</a></h2>
+                <input type="text" onInput={e => setSearch(e.target.value)} />
+            </section>
         </main>
     );
 }
