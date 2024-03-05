@@ -2,14 +2,13 @@ import { memo, useEffect, useState } from "react";
 // import useFetch from "../custom_hooks/useFetch";
 import axios from "axios";
 import '../index.css'
+import { Link } from "react-router-dom";
 function Home() {
-
-
+    const [data,setData]=useState([]);
     async function getData(){
         const res=await axios.get('https://dummyjson.com/products');
         setData([...res.data.products]);
     }
-    const [data,setData]=useState([]);
     useEffect(()=>{
         getData();
 
@@ -19,8 +18,9 @@ function Home() {
         <main>
             <div className="parent">
                     {
-                        data.map((dt)=><div className="card" key={dt.id}>
-                           <a href="" className="link">
+                        data.map((dt)=><Link to={`/detail/${dt.id}`} className="link" key={dt.id}>
+                        <div className="card" >
+                           
                            <div className="image">
                            <img src={dt.thumbnail} alt="" className="thumbnail" />
                            </div>
@@ -35,8 +35,9 @@ function Home() {
                            </div>
 
                            </div>
-                           </a>
-                        </div>)
+                          
+                        </div>
+                        </Link>)
                     }
             </div>
         </main>
