@@ -10,3 +10,60 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.parent{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+.card{
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+}
+.image{
+    width: 100%;
+    height: 60%;
+}
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.data{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+}
+.data h4{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(56, 56, 56);
+}
+.data h6{
+    color: purple;
+}
+.number{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.data h5{
+    margin: 5px;
+    text-align: center;
+}
