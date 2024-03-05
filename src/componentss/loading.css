@@ -1,0 +1,12 @@
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    width: 100svw;
+}
+
+.loading section {
+    margin: auto;
+    font-size: 50px;
+}

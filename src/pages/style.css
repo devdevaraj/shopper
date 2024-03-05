@@ -13,3 +13,12 @@
     padding-block: 0.3rem;
     border-radius: 5rem;
 }
+
+.order-placed {
+    height: 100svh;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
