@@ -1,8 +1,32 @@
-# React + Vite
+## Get started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### STEP-1: Clone the repository.
+```bash
+git clone https://github.com/devdevaraj/novavi.git
+```
+### STEP-2: Switch to the cloned directory.
+```bash
+cd novavi
+```
+### STEP-3: Install the dependencies.
+```bash
+npm install
+```
+The above command will install all the necessary dependencies mentioned in the package.json file.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### STEP-4: Strt the server
+   #### Starting development server
+   ```bash
+   npm run dev
+   ```
+   The development server will start on port 5173
+   #### Starting production server
+   Before starting the production server you need to build the project using the following command.
+   ```bash
+   npm run dev
+   ```
+   After the building process is done you can start the production server.
+   ```bash
+   npm start
+   ```
+   The production server is also configured on port 3000.
