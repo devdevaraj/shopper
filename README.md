@@ -2,7 +2,7 @@
 
 ### STEP-1: Clone the repository.
 ```bash
-git clone https://github.com/devdevaraj/novavi.git
+git clone https://github.com/devdevaraj/shopper.git
 ```
 ### STEP-2: Switch to the cloned directory.
 ```bash
