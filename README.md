@@ -23,7 +23,7 @@ The above command will install all the necessary dependencies mentioned in the p
    #### Starting production server
    Before starting the production server you need to build the project using the following command.
    ```bash
-   npm run dev
+   npm run build
    ```
    After the building process is done you can start the production server.
    ```bash
